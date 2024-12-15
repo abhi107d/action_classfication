@@ -85,7 +85,7 @@ bash download.sh
 ## 2.3. Insteall libraries
 Basically you have to follow the tutorial of `tf-pose-estimation` project. If you've setup the env for that project, then it's almost the same env to run my project.
 
-Please follow its tutorial [here](https://github.com/felixchenfy/ildoonet-tf-pose-estimation#install). I've copied what I ran to below:
+Please follow its tutorial [here](https://medium.com/@gsethi2409/pose-estimation-with-tensorflow-2-0-a51162c095ba). I've copied what I ran to below:
 ```bash
 conda create -n tf tensorflow-gpu
 conda activate tf
