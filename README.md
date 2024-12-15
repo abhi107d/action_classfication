@@ -41,7 +41,7 @@
 I collected videos of 9 Types of actions: `['stand', 'walk', 'run', 'jump', 'sit', 'squat', 'kick', 'punch', 'wave']`. The total video lengths are about 20 mins, containing about 10000 video frames recorded at 10 frames per second.
 
 The workflow of the algorithm is:
-*  Get the joints' positions by [OpenPose](https://github.com/ildoonet/tf-pose-estimation).  
+*  Get the joints' positions by [OpenPose](https://github.com/gsethi2409/tf-pose-estimation).  
 *  Track each person. Euclidean distance between the joints of two skeletons is used for matching two skeletons. 
 See `class Tracker` in [lib_tracker.py](utils/lib_tracker.py)
 *  Fill in a person's missing joints by these joints' relative pos in previous frame.  See `class FeatureGenerator` in [lib_feature_proc.py](utils/lib_feature_proc.py). So does the following.
@@ -60,14 +60,13 @@ We need Python >= 3.6.
 
 ## 2.1. Download tf-pose-estimation
 
-This project uses a OpenPose program developped by [ildoonet](https://github.com/ildoonet). The source project has been deleted. I've managed to fork it to here: [tf-pose-estimation](https://github.com/felixchenfy/ildoonet-tf-pose-estimation). 
+This project uses a OpenPose program developped by [ildoonet](https://github.com/gsethi2409). The source project has been deleted. I've managed to fork it to here: [tf-pose-estimation](https://github.com/abhi107d/tf-pose-estimation.git). 
 
 Please download it:
 ```bash
 export MyRoot=$PWD
 cd src/githubs  
-git clone https://github.com/felixchenfy/ildoonet-tf-pose-estimation
-mv ildoonet-tf-pose-estimation tf-pose-estimation
+git clone https://github.com/abhi107d/tf-pose-estimation.git
 ```
 
 ## 2.2. Download pretrained models
